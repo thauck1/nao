@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="library_generalinfo-da9d3b" version="0.0.0">
+ <names>
+  <name lang="en_US">Library_GeneralInfo</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+  <language>ja_JP</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <triggerSentences/>
+   <loadingResponses/>
+   <autonomous/>
+   <permissions/>
+  </behaviorContent>
+  <dialogContent topicName="ExampleDialog" typeVersion="1.0">
+   <topic language="en_US" path="behavior_1/ExampleDialog/ExampleDialog_enu.top"/>
+   <topic language="ja_JP" path="behavior_1/ExampleDialog/ExampleDialog_jpj.top"/>
+  </dialogContent>
+ </contents>
+ <requirements>
+  <robotRequirement model="NAO"/>
+ </requirements>
+</package>

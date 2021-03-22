@@ -1,0 +1,104 @@
+topic: ~ExampleDialog()
+language: enu
+
+# Defining needed concepts, keywords or sentences corresponding to a concept.
+concept:(yes) [yes "all right" sure "why not" ok certainly "very well" yep yea definitely amen]
+concept:(no) [no nope "don't want" "no way" never "not at all"]
+concept:(how) ["how are you" howdy "what's up" "how do you feel"]
+concept:(happy) [ok fine great happy blessed "all right" glad "not bad"]
+concept:(sad) [sad miserable bad unhappy tired]
+concept:(repeat) [repeat understand]
+concept:(thx) ["thank you" thanks gracias "much obliged" merci]
+concept:(hello) [hello hi hey "good morning" greetings]
+concept:(bye) [bye goodbye "bye bye" "tata" "see you" adios cheerio "so long" farewell "have a nice day"]
+
+# Library and Location Concepts
+concept:(foster) [foster "camp foster" "the camp foster library" "camp foster Library" "foster library"]
+concept:(hansen) [hansen "camp hansen" "the camp hansen library" "camp hansen Library" "hansen library"]
+concept:(kinser) [kinser "camp kinser" "the camp kinser library" "camp kinser Library" "kinser library"]
+concept:(futenma) [futenma "MCAS futenma" "MCAS futenma library" "camp futenma Library" "futenma library"]
+concept:(courtney) [courtney "camp courtney" "the camp courtney library" "camp courtney Library" "courtney library"]
+concept:(schwab) [schwab "camp schwab" "the camp schwab library" "camp schwab Library" "schwab library"]
+
+# Other Concepts
+concept:(fortune) [
+    "You're probably the luckiest person I've seen today!" 
+    "You're going to have a great day today!" 
+    "Your lucky color is chartreuse" 
+    "You will find true love on Flag Day" 
+    "I don't know- I'm a robot, not a fortune teller"
+    "Your lucky number is Pi"
+    "It's easy for you to cultivate trust, but don't abuse it"
+    "Be sure to take care of yourself today"
+    "Anything is possible with a winning attitude!"
+]
+concept:(device) [computer tablet device mobile phone laptop pc]
+
+# This is the Education Center Block. 
+# Nao will give the correct information depending on which base the user specifies.
+u:("where is the education center?") I can help with that! ^gotoReactivate(edcenter)
+proposal: %edcenter but I'm sorry, I don't have GPS. What base are we on?
+    u1:(~foster) The Education Center is in Camp Foster building 56 79 and they are open from 7:30 AM to 4:30 PM. You can call them at 098-970-7160 or 645-7160.
+    u1:(~futenma) The Education Center is in MCAS Futenma building 407 and they are open from 7:30 AM to 4:30 PM. You can call them at 636-3036.
+    u1:(~hansen) The Education Center is in Camp Hansen building 23 39 and they are open from 7:30 AM to 4:30 PM. You can call them at 623-4376.
+    u1:(~courtney) The Education Center is in Camp Courtney building  and they are open from 7:30 AM to 4:30 PM. You can call them at 622-9694.
+    u1:(~schwab) The Education Center is in Camp Schwab building 34 29 and they are open from 7:30 AM to 4:30 PM. You can call them at 625-2046.
+    u1:(~kinser) The Education Center is in Camp Kinser building 12 20 and they are open from 7:30 AM to 4:30 PM. You can call them at 637-1821.
+
+# This is the bathroom Block. 
+# Nao will give the correct information depending on which base the user specifies.
+u:("where is the bathroom?") ^gotoReactivate(bathroom)
+proposal: %bathroom I'm sorry, What base are we on?
+    u1:(~foster) Next to the entrance
+    u1:(~futenma) In front of the entrance
+    u1:(~hansen) go out the entrance and left side
+    u1:(~courtney) go out the entrance and left side
+    u1:(~schwab) go out the book door and right side
+    u1:(~kinser) go out the entrance and left side
+
+# This is the Library Block. 
+# Nao will give the correct information depending on which base the user specifies.
+
+concept:(libraryhours)["What time does the Library open ?" "Can you give me library information" "What are the Library's hours ?" "What are the library's operating hours" "When does the library close ?"]
+
+u:(~libraryhours) ~yes ^gotoReactivate(library)
+proposal: %library Which Library would you like to know about?
+    u1:(~foster) The  Camp Foster library is open from 9AM to 8PM every day. the phone number is 098-970-7178 or 645-7178.
+    u1:(~futenma) The MCAS Futenma library is open from 10AM to 7PM every day. the phone number is 636-3946.
+    u1:(~hansen) The Hansen library is open from 11AM to 10PM every day. the phone number is 623-7372.
+    u1:(~courtney) The Courtney library is open from 10AM to 7PM every day. the phone number is 622-9280.
+    u1:(~schwab) The Schwab library is open from 10AM to 7PM every day. the phone number is 625-2518.
+    u1:(~kinser) The Kinser library is open from 10AM to 7PM every day. the phone number is 637-1039.
+ 
+# This is the Library Storytime Block. 
+# Nao will give the correct information depending on which base the user specifies.
+u:("When is storytime?") Yay! Storytime! ^gotoReactivate(storytime)
+proposal: %storytime What Library's storytime would you like to know more about?
+    u1:(~foster) "Foster library has storytimes. Lapsit storytime starts at 10 AM and 12 PM on every Friday. Tales for Tots starts at 11 AM on every Friday. Preschool storytime starts at 11 AM on every Tuesday."
+    u1:(~futenma) I'm sorry we don't have storytimes scheduled at the Futenma Library
+    u1:(~hansen) I'm sorry we don't have storytimes scheduled at the Hansen Library
+    u1:(~courtney) Courtney library has storytimes. Lapsit storytime starts at 10:30 AM on every Tuesday. Tales for Tots starts at 11 AM on every Tuesday. Preschool storytime starts at 10:30 and 11:30 AM on every Thursday.
+    u1:(~schwab) I'm sorry we don't have storytimes scheduled at the Schwab Library
+    u1:(~kinser) Kinser library has storytimes. Lapsit storytime starts at 10:15 AM on every Monday. Tales for Tots starts at 11 on every Monday. Preschool storytime starts at 11 AM on every Wednesday. 
+
+u:("Can anyone use the library?") Yes!
+u:("Does it cost money to use the library?") It is free
+u:("Is there anything I cannot bring into the library?") Other than pets, weapons, or illegal things, most things are ok. Please ask the library staff if you need more clarification.
+u:("Can I bring my device?") ~yes
+u:("Do you have fines?") We are a fine-free Library! We don't have late fines, but users are still responsible for returning items they borrow.
+u:("Is there anywhere I can use WiFi?") Yes, of course! Anywhere in the library!
+u:("Can I use the internet?") ~yes
+u:("Is it possible to print?") Yes! We offer ten free pages per day. If you need to print more than that, please supply paper to the Library staff before printing.
+u:("Good night") Sweet dreams!
+u:("What is today's fortune?") ~fortune
+
+u:("How can I register for Summer Reading?") Visit OkinawaButler.Beanstack.com or SEE a staff member
+u:("How do I submit a 3d print request?") Visit innovation-lab-printing.herokuapp.com 
+u:("How do I download e-books?") Any Library staff member should be able to help you get started with that right now!
+
+u:("Can I borrow even if I forget my user card?") ~yes
+u:("Is it possible I can check the books I am currently borrowing?") ~yes
+u:("Can I find out what books I had borrowed before?") We don't keep your checkout history, but 
+u:("Where can I return the books after closing?")  We even have item returns located outside the Library
+u:("Can I return the book at a place other libraries?")  We are happy to accept any item that belongs to the MCCS Okinawa Libraries.
+u:("What if I cannot return it by the due date?") Don't worry! You can renew online or by asking a Library staff member and We also have automatic renewals!
