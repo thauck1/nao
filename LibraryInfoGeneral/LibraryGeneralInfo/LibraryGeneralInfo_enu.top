@@ -21,7 +21,7 @@ concept:(courtney) [courtney "camp courtney" "the camp courtney library" "camp c
 concept:(schwab) [schwab "camp schwab" "the camp schwab library" "camp schwab Library" "schwab library"]
 
 # Other Concepts
-concept:(fortune) [
+concept:(fortune) ^rand[
     "You're probably the luckiest person I've seen today!" 
     "You're going to have a great day today!" 
     "Your lucky color is chartreuse" 
