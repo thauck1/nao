@@ -1,0 +1,53 @@
+topic: ~LibraryGeneralInfo()
+language: jpj
+
+u:(図書館カードの作り方を教えて。)　かかりいいんから、申し込み用紙をもらい、記入下さい。
+# u: Tell me how to make a library card   -    Please fill in the application form
+u:(誰でも利用できるのですか)　はい。どなたでも利用できます
+
+#u: Can anyone use the library   -    Yes
+u:(利用するのにお金はかかりますか？)無料です
+
+#u: Does it cost money to use the library   -   It is free
+u:(館内に持ち込めない物はありますか？)はい　あります。かかりいいんにたずねてね
+
+#u: Is there anything I cannot bring into the library   -
+u:(持ち込めない物はどうしたらいいですか？)かかりいいんにおたずねください
+
+#u: What should I do if I cannot bring it into the library?  - 
+u:(自分のパソコンやタブレット端末、携帯は持ち込めますか？)持ち込みかのうです
+
+#u: Can I bring my own computer, tablet device or mobile phone? 
+u:(自動販売機はありますか？) 入口にあります
+
+#u: Do you have a vending machine 　 -    At the entrance
+u:(電話はありますか？)はい、、あります。ベースない、ならどこにでもかけることができます
+
+#u: Do you have a phone?
+u:(WiFiを使えるところはありますか？)図書館館内で使えます
+
+#u: Is there anywhere I can use WiFi?    -   Anywhere in the library 
+u:(インターネットは利用できますか。)はいできます。たくさん利用してね
+
+# U: Can I use the internet?    -   Yes
+u:(インターネット情報をプリントアウトすることはできますか？)もちろん可能です
+
+# U: Is it possible to print?  -  Yes, It is free
+u:(おやすみなさい) たのしい夢がみれるといいね！！
+
+# U: Good night   -    I hope you have a fun dream 
+u:(今日の運勢は)    -  　だいきちです
+
+u:(利用カードを忘れても借りられますか?)名前を教えてもらえると可能です
+u:(現在借りている本を確認したいのですが？)はいかかりいいんにきいてね
+u:(自分が以前どんな本を借りたか調べることができますか？)ごめんなさい。記録が残ってません。
+u:(閉館後に返却したいのですが？)  ブックポストがありますので、ご利用ください。
+u:(借りた所以外で返却できますか？)Butler図書館ならどこでも返却可能です
+u:(期限までに返却できないときは？)自動更新されますが、お早めに返却お願いします
+u:(日本語のほんもありますか)子供から大人の本を置いてます
+u:(日本語の子供の本はありますか)もも太郎、一寸法師やたなばたなどもあります
+u:(ほかの外国の本もありますか)はいあります
+
+u:(サマーリーリングはいつ始まるの)６月１１日に始まります。楽しみですね！
+u:(どんなけいひんがもらえるの)ペンやすいとうやバックなどをたくさん準備してます
+u:(どのように申し込みするの)ホームページから申し込めます。
