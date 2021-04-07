@@ -38,17 +38,17 @@ concept:(device) [computer tablet device mobile phone laptop pc]
 # Nao will give the correct information depending on which base the user specifies.
 u:("where is the education center?") I can help with that! ^gotoReactivate(edcenter)
 proposal: %edcenter but I'm sorry, I don't have GPS. What base are we on?
-    u1:(~foster) The Education Center is in Camp Foster building 56 79 and they are open from 7:30 AM to 4:30 PM. You can call them at 098-970-7160 or 645-7160.
-    u1:(~futenma) The Education Center is in MCAS Futenma building 407 and they are open from 7:30 AM to 4:30 PM. You can call them at 636-3036.
-    u1:(~hansen) The Education Center is in Camp Hansen building 23 39 and they are open from 7:30 AM to 4:30 PM. You can call them at 623-4376.
-    u1:(~courtney) The Education Center is in Camp Courtney building  and they are open from 7:30 AM to 4:30 PM. You can call them at 622-9694.
-    u1:(~schwab) The Education Center is in Camp Schwab building 34 29 and they are open from 7:30 AM to 4:30 PM. You can call them at 625-2046.
-    u1:(~kinser) The Education Center is in Camp Kinser building 12 20 and they are open from 7:30 AM to 4:30 PM. You can call them at 637-1821.
+    u1:(~foster) The Education Center is in Camp Foster building 56 79 and they are open from 7:30 AM to 4:30 PM. \pau=300\ You can call them at 098-970-7160 or 645-7160.
+    u1:(~futenma) The Education Center is in MCAS Futenma building 407 and they are open from 7:30 AM to 4:30 PM. \pau=300\ You can call them at 636-3036.
+    u1:(~hansen) The Education Center is in Camp Hansen building 23 39 and they are open from 7:30 AM to 4:30 PM.\pau=300\ You can call them at 623-4376.
+    u1:(~courtney) The Education Center is in Camp Courtney building  and they are open from 7:30 AM to 4:30 PM.\pau=300\ You can call them at 622-9694.
+    u1:(~schwab) The Education Center is in Camp Schwab building 34 29 and they are open from 7:30 AM to 4:30 PM.\pau=300\ You can call them at 625-2046.
+    u1:(~kinser) The Education Center is in Camp Kinser building 12 20 and they are open from 7:30 AM to 4:30 PM.\pau=300\ You can call them at 637-1821.
 
 # This is the bathroom Block. 
 # Nao will give the correct information depending on which base the user specifies.
 u:("where is the bathroom?") ^gotoReactivate(bathroom)
-proposal: %bathroom I'm sorry, What base are we on?
+proposal: %bathroom I can tell you, but what Library are we in?
     u1:(~foster) Next to the entrance
     u1:(~futenma) In front of the entrance
     u1:(~hansen) go out the entrance and left side
@@ -61,23 +61,23 @@ proposal: %bathroom I'm sorry, What base are we on?
 
 concept:(libraryhours)["What time does the Library open ?" "Can you give me library information" "What are the Library's hours ?" "What are the library's operating hours" "When does the library close ?"]
 
-u:(~libraryhours) ~yes ^gotoReactivate(library)
+u:(~libraryhours) I can help with that ^goto(library)
 proposal: %library Which Library would you like to know about?
-    u1:(~foster) The  Camp Foster library is open from 9AM to 8PM every day. the phone number is 098-970-7178 or 645-7178.
-    u1:(~futenma) The MCAS Futenma library is open from 10AM to 7PM every day. the phone number is 636-3946.
-    u1:(~hansen) The Hansen library is open from 11AM to 10PM every day. the phone number is 623-7372.
-    u1:(~courtney) The Courtney library is open from 10AM to 7PM every day. the phone number is 622-9280.
-    u1:(~schwab) The Schwab library is open from 10AM to 7PM every day. the phone number is 625-2518.
-    u1:(~kinser) The Kinser library is open from 10AM to 7PM every day. the phone number is 637-1039.
+    u1:(~foster) The  Camp Foster library is open from 9AM to 8PM every day. \pau=300\ the phone number is 098-970-7178 or 645-7178.
+    u1:(~futenma) The MCAS Futenma library is open from 10AM to 7PM every day.   \pau=300\  the phone number is 636-3946.
+    u1:(~hansen) The Hansen library is open from 11AM to 10PM every day.  \pau=300\   the phone number is 623-7372.
+    u1:(~courtney) The Courtney library is open from 10AM to 7PM every day.  \pau=300\   the phone number is 622-9280.
+    u1:(~schwab) The Schwab library is open from 10AM to 7PM every day.  \pau=300\  the phone number is 625-2518.
+    u1:(~kinser) The Kinser library is open from 10AM to 7PM every day.   \pau=300\ the phone number is 637-1039.
  
 # This is the Library Storytime Block. 
 # Nao will give the correct information depending on which base the user specifies.
-u:("When is storytime?") Yay! Storytime! ^gotoReactivate(storytime)
+u:("When is storytime?") I love Storytime! ^goto(storytime)
 proposal: %storytime What Library's storytime would you like to know more about?
-    u1:(~foster) "Foster library has storytimes. Lapsit storytime starts at 10 AM and 12 PM on every Friday. Tales for Tots starts at 11 AM on every Friday. Preschool storytime starts at 11 AM on every Tuesday."
-    u1:(~futenma) I'm sorry we don't have storytimes scheduled at the Futenma Library
+    u1:(~foster) "Foster library's Lapsit storytime starts at 10 AM and 12 PM on every Friday. Tales for Tots happens at 11 AM on every Friday. Preschool storytime is at 11 AM on every Tuesday."
+    u1:(~futenma) I'm sorry we don't have any storytimes scheduled at the Futenma Library
     u1:(~hansen) I'm sorry we don't have storytimes scheduled at the Hansen Library
-    u1:(~courtney) Courtney library has storytimes. Lapsit storytime starts at 10:30 AM on every Tuesday. Tales for Tots starts at 11 AM on every Tuesday. Preschool storytime starts at 10:30 and 11:30 AM on every Thursday.
+    u1:(~courtney) Courtney library has lots of fun storytimes! Lapsit storytime starts at 10:30 AM on every Tuesday. Tales for Tots starts at 11 AM on every Tuesday. Preschool storytime starts at 10:30 and 11:30 AM on every Thursday.
     u1:(~schwab) I'm sorry we don't have storytimes scheduled at the Schwab Library
     u1:(~kinser) Kinser library has storytimes. Lapsit storytime starts at 10:15 AM on every Monday. Tales for Tots starts at 11 on every Monday. Preschool storytime starts at 11 AM on every Wednesday. 
 

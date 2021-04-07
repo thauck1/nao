@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package version="0.0.0" installOnlyAtStartup="false" uuid="libraryinfogeneral-318f2a">
+<package installOnlyAtStartup="false" version="0.0.0" uuid="libraryinfogeneral-318f2a">
  <names>
   <name lang="en_US">LibraryInfoGeneral</name>
  </names>
  <supportedLanguages>
-  <language>en_US</language>
   <language>ja_JP</language>
+  <language>en_US</language>
  </supportedLanguages>
  <descriptionLanguages>
   <language>en_US</language>
@@ -18,7 +18,6 @@
    <permissions/>
   </behaviorContent>
   <dialogContent topicName="LibraryGeneralInfo" typeVersion="1.0">
-   <topic language="en_US" path="LibraryGeneralInfo/LibraryGeneralInfo_enu.top"/>
    <topic language="ja_JP" path="LibraryGeneralInfo/LibraryGeneralInfo_jpj.top"/>
   </dialogContent>
  </contents>
