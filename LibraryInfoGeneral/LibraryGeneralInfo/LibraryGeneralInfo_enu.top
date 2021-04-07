@@ -38,12 +38,12 @@ concept:(device) [computer tablet device mobile phone laptop pc]
 # Nao will give the correct information depending on which base the user specifies.
 u:("where is the education center?") I can help with that! ^gotoReactivate(edcenter)
 proposal: %edcenter but I'm sorry, I don't have GPS. What base are we on?
-    u1:(~foster) The Education Center is in Camp Foster building 56 79 and they are open from 7:30 AM to 4:30 PM. \pau=300\ You can call them at 098-970-7160 or 645-7160.
-    u1:(~futenma) The Education Center is in MCAS Futenma building 407 and they are open from 7:30 AM to 4:30 PM. \pau=300\ You can call them at 636-3036.
-    u1:(~hansen) The Education Center is in Camp Hansen building 23 39 and they are open from 7:30 AM to 4:30 PM.\pau=300\ You can call them at 623-4376.
-    u1:(~courtney) The Education Center is in Camp Courtney building  and they are open from 7:30 AM to 4:30 PM.\pau=300\ You can call them at 622-9694.
-    u1:(~schwab) The Education Center is in Camp Schwab building 34 29 and they are open from 7:30 AM to 4:30 PM.\pau=300\ You can call them at 625-2046.
-    u1:(~kinser) The Education Center is in Camp Kinser building 12 20 and they are open from 7:30 AM to 4:30 PM.\pau=300\ You can call them at 637-1821.
+    u1:(~foster) The Education Center is in Camp Foster building 56 79 and they are open from 7:30 AM to 4:30 PM. You can call them at 098-970-7160 or 645-7160.
+    u1:(~futenma) The Education Center is in MCAS Futenma building 407 and they are open from 7:30 AM to 4:30 PM. You can call them at 636-3036.
+    u1:(~hansen) The Education Center is in Camp Hansen building 23 39 and they are open from 7:30 AM to 4:30 PM. You can call them at 623-4376.
+    u1:(~courtney) The Education Center is in Camp Courtney building  and they are open from 7:30 AM to 4:30 PM. You can call them at 622-9694.
+    u1:(~schwab) The Education Center is in Camp Schwab building 34 29 and they are open from 7:30 AM to 4:30 PM. You can call them at 625-2046.
+    u1:(~kinser) The Education Center is in Camp Kinser building 12 20 and they are open from 7:30 AM to 4:30 PM. You can call them at 637-1821.
 
 # This is the bathroom Block. 
 # Nao will give the correct information depending on which base the user specifies.
@@ -63,12 +63,12 @@ concept:(libraryhours)["What time does the Library open ?" "Can you give me libr
 
 u:(~libraryhours) I can help with that ^goto(library)
 proposal: %library Which Library would you like to know about?
-    u1:(~foster) The  Camp Foster library is open from 9AM to 8PM every day. \pau=300\ the phone number is 098-970-7178 or 645-7178.
-    u1:(~futenma) The MCAS Futenma library is open from 10AM to 7PM every day.   \pau=300\  the phone number is 636-3946.
-    u1:(~hansen) The Hansen library is open from 11AM to 10PM every day.  \pau=300\   the phone number is 623-7372.
-    u1:(~courtney) The Courtney library is open from 10AM to 7PM every day.  \pau=300\   the phone number is 622-9280.
-    u1:(~schwab) The Schwab library is open from 10AM to 7PM every day.  \pau=300\  the phone number is 625-2518.
-    u1:(~kinser) The Kinser library is open from 10AM to 7PM every day.   \pau=300\ the phone number is 637-1039.
+    u1:(~foster) "The  Camp Foster library is open from 9AM to 8PM every day and the phone number is 098-970-7178 or 645-7178."
+    u1:(~futenma) "The MCAS Futenma library is open from 10AM to 7PM every day and the phone number is 636-3946."
+    u1:(~hansen) "The Hansen library is open from 11AM to 10PM every day and the phone number is 623-7372."
+    u1:(~courtney) "The Courtney library is open from 10AM to 7PM every day and the phone number is 622-9280."
+    u1:(~schwab) "The Schwab library is open from 10AM to 7PM every day and the phone number is 625-2518."
+    u1:(~kinser) "The Kinser library is open from 10AM to 7PM every day and the phone number is 637-1039."
  
 # This is the Library Storytime Block. 
 # Nao will give the correct information depending on which base the user specifies.
